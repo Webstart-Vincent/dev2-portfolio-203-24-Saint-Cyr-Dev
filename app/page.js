@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-function HomePage() {
+export default function HomePage() {
   return (
     <div className="min-h-screen">
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
@@ -63,4 +63,3 @@ function HomePage() {
   );
 }
 
-export default HomePage;
