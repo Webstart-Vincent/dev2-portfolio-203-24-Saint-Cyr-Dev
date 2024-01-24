@@ -1,0 +1,25 @@
+10-01-2024 
+le serveur ne se kancait pas car utilisant l'alias @ pour definir le chemin absolu je ne l'vais pas definir comme telle dans le projet donc :
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/layout.jsx:3:0
+Module not found: Can't resolve '@/components/provider'
+  1 | import { Inter } from 'next/font/google'
+  2 | import './globals.css'
+> 3 | import Provider from '@/components/provider'
+  4 |
+  5 | const inter = Inter({ subsets: ['latin'] })
+  6 |
+
+ne retrouvait pas le chemins de provider, il fallais ajouter :
+ ```javascript
+   const path = require('path');
+
+   module.exports = {
+     // ...autres configurations...
+     webpack: (config) => {
+       config.resolve.alias['@'] = path.resolve(__dirname);
+       return config;
+     },
+   };
+   ```
+   à next.config.js
