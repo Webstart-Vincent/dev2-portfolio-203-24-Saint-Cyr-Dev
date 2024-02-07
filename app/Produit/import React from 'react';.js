@@ -26,7 +26,7 @@ export default function HomePage() {
           </div>
 
           <div className="lg:w-1/2 lg:h-2s/2 lg:pl-8 w-100 h-100 mb-4 lg:mb-0 bg-imgpersonnage1">
-            <Image className='w-2/5' src="/imgpersonnage1.jpg" width={280} height={380}/>
+            <Image className='w-2/5' src="/imgpersonnage1.jpg" width={280} height={380} />
 
           </div>
             </div>

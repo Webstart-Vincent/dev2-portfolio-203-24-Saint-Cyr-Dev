@@ -14,7 +14,7 @@ const Produit = () => {
       <Header />
       <div className='flex justify-center items-center m-auto p-5'>
         <div></div>
-        <Image className='w-4/7 sm:w-3/8 lg:w-2/8	 xl:w-3/9		2xl:w-1/5 ' src="/imgpersonnage2.png" width={300} height={300}/>
+        <Image className='w-4/7 sm:w-3/8 lg:w-2/8	 xl:w-3/9		2xl:w-1/5 ' src="/imgpersonnage2.png" width={300} height={300} />
         <div></div>
       
       </div>
@@ -28,8 +28,8 @@ const Produit = () => {
           </div>
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
-              <div className="text-gray-900 font-bold text-xl mb-2">Graphiste Créatif avec 3 Ans d'Expérience</div>
-              <p className="text-gray-700 text-base">Graphiste depuis trois ans, j'ai acquis une expérience variée dans la création visuelle, allant de la conception de logos percutants à la réalisation de mises en page élégantes pour divers supports de communication</p>
+              <div className="text-gray-900 font-bold text-xl mb-2">Graphiste Créatif avec 3 Ans d&aposExpérience</div>
+              <p className="text-gray-700 text-base">Graphiste depuis trois ans, j&aposai acquis une expérience variée dans la création visuelle, allant de la conception de logos percutants à la réalisation de mises en page élégantes pour divers supports de communication</p>
             </div>
           </div>
         </div>
@@ -39,8 +39,8 @@ const Produit = () => {
           </div>
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
-              <div className="text-gray-900 font-bold text-xl mb-2">Développeur Web Junior avec 1 An d'Expérience</div>
-              <p className="text-gray-700 text-base">Fort d'un an d'expérience, je suis un développeur web junior passionné, spécialisé dans les langages de programmation web tels que HTML, CSS et JavaScript, et désireux de relever de nouveaux défis passionnants dans le domaine.</p>
+              <div className="text-gray-900 font-bold text-xl mb-2">Développeur Web Junior avec 1 An d&aposExpérience</div>
+              <p className="text-gray-700 text-base">Fort d&aposun an d&aposexpérience, je suis un développeur web junior passionné, spécialisé dans les langages de programmation web tels que HTML, CSS et JavaScript, et désireux de relever de nouveaux défis passionnants dans le domaine.</p>
             </div>
           </div>
         </div>
