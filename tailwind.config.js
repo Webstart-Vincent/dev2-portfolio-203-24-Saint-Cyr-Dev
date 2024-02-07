@@ -12,7 +12,31 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundImage: theme => ({
+        'hero-pattern': "url('../app/image/imgwallpaper.jpg')",
+        'imgpersonnage1': "url('../app/image/imgpersonnage1.jpg')",
+        'imgpersonnage2': "url('../app/image/imgpersonnage2.png')",
+
+        'img-cg1': "url('../app/image/pg1.jpg')",
+        'img-cg2': "url('../app/image/pg2.jpg')",
+        'img-cg3': "url('../app/image/pg3.jpg')",
+        'img-cg4': "url('../app/image/pg4.jpg')",
+        'img-cg5': "url('../app/image/pg5.jpg')",
+        'img-cg6': "url('../app/image/pg6.jpg')",
+
+        'img-sg1': "url('../app/image/sg1.jpeg')",
+        'img-sg2': "url('../app/image/sg2.jpeg')",
+        'img-sg3': "url('../app/image/sg3.jpeg')",
+        'img-sg4': "url('../app/image/sg4.jpeg')",
+        'img-sg5': "url('../app/image/sg5.jpeg')",
+        'img-sg6': "url('../app/image/sg6.jpeg')",
+
+
+       })
     },
   },
   plugins: [],
+
 }
+
+
