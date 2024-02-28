@@ -23,8 +23,8 @@ const Produit = () => {
     </div>
     <div className=''>
       <div className=' justify-center items-center p-5 bg-gradient-to-b from-purple-700 to-indigo-800'>
-        <div className="w-3/5 lg:max-w-full lg:flex m-5 mx-auto">
-          <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden bg-hero-pattern" title="Woman holding a mug">
+        <div className="w-5/5 lg:max-w-full lg:flex m-5 mx-auto">
+          <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden bg-img-logo" title="Woman holding a mug">
           </div>
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
@@ -34,8 +34,8 @@ const Produit = () => {
           </div>
         </div>
 
-        <div className="w-3/5 lg:max-w-full lg:flex m-5 mx-auto">
-          <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden bg-hero-pattern" title="Woman holding a mug">
+        <div className="w-5/5 lg:max-w-full lg:flex m-5 mx-auto">
+          <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden bg-img-logo" title="Woman holding a mug">
           </div>
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
@@ -50,64 +50,55 @@ const Produit = () => {
             <div>
                 <h2 className="text-2xl font-extrabold text-white text-center">Creation Graphique</h2>
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
-                    <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-ou bg-img-cg1">
+                    <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-logo">
+            
                       <div className="absolute inset-0 bg-gray bg-opacity-10 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
                         <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                             <h3 className="text-center">
-                                <a className="text-white text-2xl font-bold text-center" href="#">
-                                    <span className="absolute inset-0"></span>
-                                </a>
-                            </h3>
+                                <Link href="https://www.pinterest.fr/HelloCyr/" className="text-white text-2xl font-bold text-center "><span className="absolute inset-0"></span></Link>
+                          </h3>
                         </div>
                     </div>
                     <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-cg4">
                       <div className="absolute inset-0 bg-gray bg-opacity-10 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
                         <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                             <h3 className="text-center">
-                                <a className="text-white text-2xl font-bold text-center" href="#">
-                                    <span className="absolute inset-0"></span>
-                                </a>
-                            </h3>
+                                <Link href="https://www.pinterest.fr/HelloCyr/affiche-web/" className="text-white text-2xl font-bold text-center "><span className="absolute inset-0"></span></Link>
+                          
+                          </h3>
                         </div>
                     </div>
-                    <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-cg2">
+                    <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out">
                       <div className="absolute inset-0 bg-gray bg-opacity-10 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
                         <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                             <h3 className="text-center">
-                                <a className="text-white text-2xl font-bold text-center" href="#">
-                                    <span className="absolute inset-0"></span>
-                                </a>
-                            </h3>
+                                <Link href="https://www.pinterest.fr/HelloCyr/logo/" className="text-white text-2xl font-bold text-center "><span className="absolute inset-0"></span></Link>
+                                <Image className='w-full h-64 bg' src="/logo1.png" width={550} height={550}/>
+                          </h3>
                         </div>
                     </div>
                     <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-cg5">
                       <div className="absolute inset-0 bg-gray bg-opacity-10 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
                         <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                             <h3 className="text-center">
-                                <a className="text-white text-2xl font-bold text-center" href="#">
-                                    <span className="absolute inset-0"></span>
-                                </a>
-                            </h3>
+                                <Link href="https://www.pinterest.fr/HelloCyr/dessin-personnage/" className="text-white text-2xl font-bold text-center "><span className="absolute inset-0"></span></Link>
+                          </h3>
                         </div>
                     </div>
                     <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-cg3">
                       <div className="absolute inset-0 bg-gray bg-opacity-10 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
                         <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                             <h3 className="text-center">
-                                <a className="text-white text-2xl font-bold text-center" href="#">
-                                    <span className="absolute inset-0"></span>
-                                </a>
-                            </h3>
+                                <Link href="https://www.pinterest.fr/HelloCyr/joyeux-anniversaire/" className="text-white text-2xl font-bold text-center "><span className="absolute inset-0"></span></Link>
+                          </h3>
                         </div>
                     </div>
                     <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-cg6">
                       <div className="absolute inset-0 bg-gray bg-opacity-10 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
                         <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                             <h3 className="text-center">
-                                <a className="text-white text-2xl font-bold text-center" href="#">
-                                    <span className="absolute inset-0"></span>
-                                </a>
-                            </h3>
+                                <Link href="https://www.pinterest.fr/HelloCyr/" className="text-white text-2xl font-bold text-center "><span className="absolute inset-0"></span></Link>
+                          </h3>
                         </div>
                     </div>
                 </div>
@@ -119,7 +110,7 @@ const Produit = () => {
           <div>
               <h2 className="text-2xl font-extrabold text-center text-white">Projets webs et Mobile</h2>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
-                  <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-sg1">
+                  <div className="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out bg-img-ab1">
                     <div className="absolute inset-0 bg-gray bg-opacity-10 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
                       <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                           <h3 className="text-center">

@@ -19,9 +19,10 @@ const Produit = () => {
         <main className="container mx-auto px-4 py-6">
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 flex">
-                    <Image className='w-2/5' src="/imgpersonnage1.jpg" width={280} height={380} />
-                    <Image className='w-2/5' src="/imgpersonnage1.jpg" width={280} height={380} />
-                </div>
+                    <div className=""> 
+                        <Image className='' src="/About.png" width={500} height={500} />
+                        <Image className='' src="/Slider1.png" width={500} height={500} />
+                        <Image className='' src="/Slider2.png" width={500} height={500} /> </div>               </div>
                 <div className="md:w-1/2 mt-4 md:mt-0 md:ml-4">
                     <h2 className="text-xl font-bold text-gray-800"> Création du Site Vitrine pour Farina Logistique </h2>
                     <p className="text-gray-600 mt-2"> Le projet de création d&aposun site vitrine pour Farina Logistique vise à offrir une plateforme en ligne attrayante et fonctionnelle pour promouvoir les services de location de véhicules de l&aposentreprise. L&aposobjectif principal est de fournir aux visiteurs toutes les informations essentielles sur les types de véhicules disponibles, les tarifs de location et les zones de service, tout en offrant une expérience utilisateur fluide et intuitive. Le site comprendra une page d&aposaccueil dynamique mettant en avant les services principaux, un catalogue détaillé des véhicules disponibles, un formulaire de demande de devis pour des besoins spécifiques, ainsi que des sections informatives sur les tarifs, les conditions générales et les contacts. Des éléments visuels de qualité, tels que des images et des vidéos, seront intégrés pour illustrer les services offerts et renforcer la crédibilité de l&aposentreprise.</p>
@@ -35,7 +36,7 @@ const Produit = () => {
                     </ul>
                 </div>
                     <div className="mt-4">
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Aller au Site</button>
+                        <Link href="https://farinalogistique.com/" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Aller au Site</Link>
                     </div>
                 </div>
             </div>

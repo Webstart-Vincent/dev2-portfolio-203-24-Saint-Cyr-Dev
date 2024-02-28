@@ -24,12 +24,18 @@ module.exports = {
         'img-cg5': "url('../app/image/pg5.jpg')",
         'img-cg6': "url('../app/image/pg6.jpg')",
 
-        'img-sg1': "url('../app/image/sg1.jpeg')",
+        'img-logo': "url('../app/image/Logo.png')",
         'img-sg2': "url('../app/image/sg2.jpeg')",
         'img-sg3': "url('../app/image/sg3.jpeg')",
         'img-sg4': "url('../app/image/sg4.jpeg')",
         'img-sg5': "url('../app/image/sg5.jpeg')",
         'img-sg6': "url('../app/image/sg6.jpeg')",
+
+        'logo': "url('../app/image/Logo.png)",
+        'img-ab1': "url('../app/image/About.png')",
+
+
+
 
 
        })
