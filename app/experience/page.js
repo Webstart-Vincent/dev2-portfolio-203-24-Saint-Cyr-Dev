@@ -14,7 +14,7 @@ const Produit = () => {
       <Header />
       <div className='flex justify-center items-center m-auto p-5'>
         <div></div>
-        <Image className='w-4/7 sm:w-3/8 lg:w-2/8	 xl:w-3/9		2xl:w-1/5 ' src="/imgpersonnage2.png" width={300} height={300} />
+          <Image className='w-4/7 sm:w-3/8 lg:w-2/8	 xl:w-3/9		2xl:w-1/5 ' alt="Description de l'image" src="/imgpersonnage2.png" width={300} height={300} />
         <div></div>
       
       </div>
@@ -73,7 +73,7 @@ const Produit = () => {
                         <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                             <h3 className="text-center">
                                 <Link href="https://www.pinterest.fr/HelloCyr/logo/" className="text-white text-2xl font-bold text-center "><span className="absolute inset-0"></span></Link>
-                                <Image className='w-full h-64 bg' src="/logo1.png" width={550} height={550}/>
+                                <Image className='w-full h-64 bg' src="/logo1.png" alt="Description de l'image" width={550} height={550}/>
                           </h3>
                         </div>
                     </div>
