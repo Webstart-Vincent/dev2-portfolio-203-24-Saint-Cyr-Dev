@@ -1,14 +1,19 @@
-'use client'
-import { useSession } from 'next-auth/react'
+import { useSession } from 'next-auth/react';
 
 const Dashboard = () => {
-  const { data: session, status } = useSession()
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
+  const { data: session, status } = useSession();
   return (
     <>
       <h1>Tableau de bord</h1>
-      <p>Session : {session ?? 'Pas de session'}</p>
+      <p>Utilisateur : {session?.user?.session ?? 'Pas d utilisateur'}</p>
     </>
-  )
-}
+  );
+};
 
 export default Dashboard
+
+
