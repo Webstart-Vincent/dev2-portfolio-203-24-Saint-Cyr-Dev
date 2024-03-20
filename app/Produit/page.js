@@ -9,9 +9,10 @@ const Produit = () => {
   return (
     <>
     <body className="bg-gray-100 font-sans">
-        <BgAnimation />
-        <Header />
-        <div className='bg-white'>
+        <div className='bg-[#7F00FF]'>
+            <Header />
+        </div>
+        <div className='bg-white '>
             <header className="bg-white shadow-md">
                 <div className="container mx-auto px-4 py-2">
                     <h1 className="text-2xl font-bold text-gray-800">Location de Voiture</h1>
