@@ -33,16 +33,16 @@ module.exports = {
 
         'logo': "url('../app/image/Logo.png)",
         'img-ab1': "url('../app/image/About.png')",
-
-
-
-
-
-       })
+       }),
+      fontFamily: {
+        Irish: ["Irish Grover", "system-ui"],
+        Embed : ["Passions Conflict", "cursive"],
+        Hammersmith : ["Hammersmith One", "sans-serif"],
+      },
+      
     },
   },
   plugins: [],
 
 }
-
 
