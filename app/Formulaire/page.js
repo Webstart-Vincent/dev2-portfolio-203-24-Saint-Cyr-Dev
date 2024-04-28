@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 "use client"
 
 import React from 'react';
 import { CldUploadButton } from 'next-cloudinary';
+=======
+/*import React from 'react';
+>>>>>>> c8ed1269a1728c98bc7763e292ed1ac54c869415
 import Header from '@/app/composants/headers';
 import BgAnimation from '@/app/composants/BgAnimation';
 
@@ -55,9 +59,9 @@ const Formulaire = () => {
   );
 };
 
-export default Formulaire;
+export default Formulaire;*/
 
-/*import { useState } from 'react';
+import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 const NewProjectForm = () => {
@@ -129,4 +133,4 @@ const NewProjectForm = () => {
   );
 };
 
-export default NewProjectForm;*/
+export default NewProjectForm;
