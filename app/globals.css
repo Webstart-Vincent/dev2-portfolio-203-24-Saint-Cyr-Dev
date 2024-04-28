@@ -12,7 +12,20 @@ body {
     background-color:#7F00FF ;
 }
 
-:root {
+.img-left {
+    margin-left : auto;
+}
+
+@media screen and (max-width: 640px) {
+    .DevItems {
+      display: none;
+    }
+  }
+  
+
+
+
+/*:root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -146,7 +159,7 @@ nav {
 .background {
     z-index:-2;
 }
-
+*/
 /*@media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
