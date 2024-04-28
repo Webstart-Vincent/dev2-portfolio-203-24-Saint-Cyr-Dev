@@ -19,7 +19,7 @@ const EtudePage = () => {
                 annee de bachelor, j allie une solide comprehension des principes fondamentaux du developpement web a une creativite debordante.</p>
         </div>
         <div className='w-full sm:w-10/12 p-5'>
-          <Image className='w-full m-2' alt="Description de l'image" src="/imgpersonnage4.png" width={300} height={300}/>
+          <Image className='w-full m-2' alt="Description de l'image" src="/imgpersonnage5.png" width={300} height={300}/>
         </div>
       </div>
 

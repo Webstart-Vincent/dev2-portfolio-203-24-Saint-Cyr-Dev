@@ -11,7 +11,7 @@ const Contact = () => {
 
       <div className='bg-white'>
         <div className='pt-12'>
-          <h2 class="text-[#3F0777] font-Irish text-2xl sm:text-3xl lg:text-5xl text-center ">Contact Us</h2>
+          <h2 class="text-[#3F0777] font-Irish text-2xl sm:text-3xl lg:text-5xl text-center ">Contactez Moi</h2>
         </div>
         <div className='md:flex sm:gap-2'>
             <div class="w-full py-8 lg:py-16 px-10 sm:px-16 mx-auto max-w-screen-md">
