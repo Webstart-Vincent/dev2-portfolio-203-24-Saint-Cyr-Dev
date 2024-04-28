@@ -9,8 +9,6 @@ const Produit = () => {
   return (
     <>
     <div className=''>  
-      <div className="hidden lg:block absolute inset-0 background w-full h-full object-cover bg-hero-pattern justify-center items-center "></div>
-      <BgAnimation />
       <Header />
       <div className='flex justify-center items-center m-auto p-5'>
         <div>
@@ -21,7 +19,7 @@ const Produit = () => {
             <Image className='w-1/5 m-5 animate-ping  ' alt="Description de l'image" src="/I2.png" width={300} height={300} />
           </div>
         </div>
-        <Image className='w-5/5' alt="Description de l'image" src="/imgpersonnage2.png" width={300} height={300} />
+        <Image className='w-4/12' alt="Description de l'image" src="/imgpersonnage2.png" width={300} height={300} />
         <div>
           <div className="DevItems">
             <Image className='w-1/6 m-5 animate-bounce img-left' alt="Description de l'image" src="/I3.png" width={300} height={300} />

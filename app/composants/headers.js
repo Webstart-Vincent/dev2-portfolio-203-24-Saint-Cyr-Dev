@@ -23,7 +23,7 @@ const Header = () => {
               <Link href="/experience" className="block py-2 px-3 text-white rounded  md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0  md:dark:hover:text-black-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projets</Link>
             </li>
             <li>
-              <Link href="/Etude" className="block py-2 px-3 text-white rounded  md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0  md:dark:hover:text-black-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Parcours</Link>
+              <Link href="/Etude" className="block py-2 px-3 text-white rounded  md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0  md:dark:hover:text-black-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Profil</Link>
             </li>
             <li>
               <Link href="/Contact" className="block py-2 px-3 text-white rounded  md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0  md:dark:hover:text-black-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</Link>
