@@ -49,8 +49,8 @@ const Produit = () => {
           <div className="lg:flex m-5">
               <Image className=' rounded-2xl' alt="Logo Conception Graphique" src="/Logo.png" width={300} height={300} />
             <div className="p-2 px-5 leading-normal">
-                  <h2 className="text-gray-900 font-Irish text-2xl sm:text-3xl lg:text-4xl mb-2">Graphiste Créatif avec 3 Ans d&aposExpérience</h2>
-                  <p className="text-gray-700 text-sm sm:text-base lg:text-lg font-Hammersmith">Graphiste depuis trois ans, j&aposai acquis une expérience variée dans la création visuelle, allant de la conception de logos percutants à la réalisation de mises en page élégantes pour divers supports de communication</p>
+                  <h2 className="text-gray-900 font-Irish text-2xl sm:text-3xl lg:text-4xl mb-2">Etudiant 2e Anné en Developpement Web et Mobile</h2>
+                  <p className="text-gray-700 text-sm sm:text-base lg:text-lg font-Hammersmith">Passionné par les technologies de l information depuis toujours, j ai choisi de me specialiser dans ce domaine fascinant ou la créativité rencontre la rigueur technique. </p>
             </div>
           </div>
         </div>
