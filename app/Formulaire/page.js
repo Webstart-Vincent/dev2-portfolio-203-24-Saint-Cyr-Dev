@@ -1,87 +1,86 @@
+"use client";
 
-/*import React from 'react';
-import React, { useRef } from 'react';*/
+import { useState } from "react";
 
-/*import { CldUploadButton } from 'next-cloudinary';
-import Header from '@/app/composants/headers';
-import BgAnimation from '@/app/composants/BgAnimation';*/
-
-const Formulaire = () => {
-
-};
-
-export default Formulaire;
-
-/*import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-
-const NewProjectForm = () => {
-  const history = useHistory();
-  const [formData, setFormData] = useState({
-    title: '',
-    slug: '',
-    text: '',
-    seoDescription: '',
-    seoTitle: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+export default function ContactForm() {
+  const [fulltitle, setFulltitle] = useState("");
+  const [description, setdescription] = useState("");
+  const [error, setError] = useState([]);
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      // Envoyer les données au backend pour l'enregistrement dans la base de données MongoDB
-      // Exemple avec fetch API
-      const response = await fetch('mongodb+srv://ballymongodb:<y0HeOyJcc3MeOaCx>@cluster0.w3eapou.mongodb.net/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-      if (response.ok) {
-        // Rediriger vers la page de tableau de bord ou une autre page appropriée
-        history.push('/dashboard');
-      } else {
-        // Gérer les erreurs
-        console.error('Erreur lors de l\'enregistrement du projet');
-      }
-    } catch (error) {
-      console.error('Erreur réseau :', error);
+
+    console.log("Titre: ", fulltitle);
+    console.log("description: ", description);
+
+    const res = await fetch("app\api\auth\[...nextauth]\route.js", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        fulltitle,
+        description,
+      }),
+    });
+
+    const { msg, success } = await res.json();
+    setError(msg);
+    setSuccess(success);
+
+    if (success) {
+      setFulltitle("");
+      setdescription("");
     }
   };
 
   return (
-    <div>
-      <h2>Créer un nouveau projet</h2>
-      <form onSubmit={handleSubmit}>
+    <>
+      <form
+        onSubmit={handleSubmit}
+        className="py-4 mt-4 border-t flex flex-col gap-5"
+      >
         <div>
-          <label>Titre :</label>
-          <input type="text" name="title" value={formData.title} onChange={handleChange} required />
+          <label htmlFor="fulltitle">Titre</label>
+          <input
+            onChange={(e) => setFulltitle(e.target.value)}
+            value={fulltitle}
+            type="text"
+            id="fulltitle"
+            placeholder="Titre du Projets"
+          />
         </div>
-        <div>
-          <label>Slug :</label>
-          <input type="text" name="slug" value={formData.slug} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Texte :</label>
-          <textarea name="text" value={formData.text} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Description SEO :</label>
-          <textarea name="seoDescription" value={formData.seoDescription} onChange={handleChange} />
-        </div>
-        <div>
-          <label>Titre SEO :</label>
-          <input type="text" name="seoTitle" value={formData.seoTitle} onChange={handleChange} />
-        </div>
-        <button type="submit">Enregistrer</button>
-      </form>
-    </div>
-  );
-};
 
-export default NewProjectForm;*/
+
+        <div>
+          <label htmlFor="description">Description</label>
+          <textarea
+            onChange={(e) => setdescription(e.target.value)}
+            value={description}
+            className="h-32"
+            id="description"
+            placeholder="Description du projets..."
+          ></textarea>
+        </div>
+
+        <button className="bg-green-700 p-3 text-white font-bold" type="submit">
+          Send
+        </button>
+      </form>
+
+      <div className="bg-slate-100 flex flex-col">
+        {error &&
+          error.map((e) => (
+            <div
+              className={`${
+                success ? "text-green-800" : "text-red-600"
+              } px-5 py-2`}
+            >
+              {e}
+            </div>
+          ))}
+      </div>
+    </>
+  );
+}
