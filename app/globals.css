@@ -22,13 +22,21 @@ body {
     }
   }
   
-form > div {
-  @apply flex flex-col gap-2;
+form {
+    background-color: white;
+    padding:10px;
+    width: 50%;
 }
 
-input,
+div {
+}
+
+input {
+    padding: 5px;
+}
 textarea {
-  @apply shadow-md px-6 py-2 border border-slate-300;
+    padding: 5px;
+ 
 }
 
 
