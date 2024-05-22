@@ -1,10 +1,10 @@
 // Importation des modules nécessaires
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
-import connectDB from "@/app/lib/mongodb";
+/*import connectDB from "@/app/lib/mongodb";
 import Contact from "@/app/models/contact";
 import { NextResponse } from "next/server";
-import mongoose from "mongoose";
+import mongoose from "mongoose";*/
 
 const authOptions = {
   providers: [
