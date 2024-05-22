@@ -1,14 +1,25 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const connectDB = async () => {
-  try {
-    if (mongoose.connection.readyState === 0) {
-      await mongoose.connect(process.env.MONGODB_URI);
-      console.log("db connected");
-    }
-  } catch (error) {
-    console.log(error);
-  }
-};
+const FormulaireSchema = new Schema({
+  fulltitle: {
+    type: String,
+    required: [true, "Le titre est requis."],
+    trim: true,
+    minLength: [2, "Le titre doit comporter plus de 2 caractères."],
+    maxLength: [50, "Le titre doit comporter moins de 50 caractères."],
+  },
+  description: {
+    type: String,
+    required: [true, "La description est requise."],
+  },
+  slug: {
+    type: String,
+    required: [true, "Le slug est requis."],
+    trim: true,
+    unique: true,
+  },
+});
 
-export default connectDB;
+const Formulaire = mongoose.models.Formulaire || mongoose.model("Formulaire", FormulaireSchema);
+
+export default Formulaire;
