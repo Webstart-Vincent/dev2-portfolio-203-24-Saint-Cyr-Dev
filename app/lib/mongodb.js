@@ -1,25 +1,31 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from 'mongoose';
 
-const FormulaireSchema = new Schema({
-  fulltitle: {
-    type: String,
-    required: [true, "Le titre est requis."],
-    trim: true,
-    minLength: [2, "Le titre doit comporter plus de 2 caractères."],
-    maxLength: [50, "Le titre doit comporter moins de 50 caractères."],
-  },
-  description: {
-    type: String,
-    required: [true, "La description est requise."],
-  },
-  slug: {
-    type: String,
-    required: [true, "Le slug est requis."],
-    trim: true,
-    unique: true,
-  },
-});
+const MONGODB_URI = process.env.MONGODB_URL;
+if (!MONGODB_URI) {
+  throw new Error('Veuillez définir l\'URI MongoDB dans .env');
+}
 
-const Formulaire = mongoose.models.Formulaire || mongoose.model("Formulaire", FormulaireSchema);
+let cached = global.mongoose;
 
-export default Formulaire;
+if (!cached) {
+  cached = global.mongoose = { conn: null, promise: null };
+}
+
+async function dbConnect() {
+  if (cached.conn) {
+    return cached.conn;
+  }
+
+  if (!cached.promise) {
+    const opts = {
+      bufferCommands: false,
+    };
+    cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
+      return mongoose;
+    });
+  }
+  cached.conn = await cached.promise;
+  return cached.conn;
+}
+
+export default dbConnect;
