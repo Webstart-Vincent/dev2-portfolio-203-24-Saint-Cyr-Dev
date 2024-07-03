@@ -68,12 +68,12 @@ const Contact = () => {
           </div>
 
           <div className='w-10/12 p-8 md:pr-11 justify-center'>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Pour obtenir plus de détails sur mes services, mes missions ou obtenir un devis, n'hésitez pas à me contacter afin que je puisse répondre à toutes vos questions et vous fournir l'assistance dont vous avez besoin.</p>
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Pour obtenir plus de détails sur mes services, mes missions ou obtenir un devis, n hésitez pas à me contacter afin que je puisse répondre à toutes vos questions et vous fournir lassistance dont vous avez besoin.</p>
             <div className='my-3 sm:my-9'>
               <hr className="h-px my-[10px] bg-gray-200 border-0 dark:bg-gray-700" />
               <p className="mb-2 lg:mb-2 font-normal text-gray-500 dark:text-gray-400 sm:text-xl">Tel. : 07 89 80 00 64</p>
               <p className="mb-2 lg:mb-2 font-normal text-gray-500 dark:text-gray-400 sm:text-xl">Mail. : Bjunior7802@gmail.com</p>
-              <p className="mb-2 lg:mb-2 font-normal text-gray-500 dark:text-gray-400 sm:text-xl">Adresse. : 78620 l'Étang-la-Ville 3 Allée de la Niche</p>
+              <p className="mb-2 lg:mb-2 font-normal text-gray-500 dark:text-gray-400 sm:text-xl">Adresse. : 78620 lÉtang-la-Ville 3 Allée de la Niche</p>
             </div>
           </div>
         </div>
