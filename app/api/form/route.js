@@ -1,29 +1,30 @@
 import dbConnect from '../../lib/mongodb';
 import Formulaire from '../../model/Formulaire';
+import { NextResponse } from 'next/server';
 
-export async function POST(req, res) {
+export async function POST(req) {
   await dbConnect();
 
   try {
-    console.log('Données reçues:', req.body);
-    const formulaire = new Formulaire(req.body);
+    const json = await req.json();
+    const formulaire = new Formulaire(json);
     await formulaire.save();
     console.log('Données enregistrées:', formulaire);
-    res.status(201).json({ success: true, data: formulaire });
+    return NextResponse.json({ success: true, data: formulaire }, { status: 201 });
   } catch (error) {
     console.error('Erreur lors de l\'enregistrement des données:', error);
-    res.status(400).json({ success: false, error: error.toString() });
+    return NextResponse.json({ success: false, error: error.message }, { status: 400 });
   }
 }
 
-export async function GET(req, res) {
+export async function GET(req) {
   await dbConnect();
 
   try {
     const formulaires = await Formulaire.find({});
-    res.status(200).json({ success: true, data: formulaires });
+    return NextResponse.json({ success: true, data: formulaires }, { status: 200 });
   } catch (error) {
     console.error('Erreur lors de la récupération des données:', error);
-    res.status(400).json({ success: false, error: error.toString() }); 
+    return NextResponse.json({ success: false, error: error.message }, { status: 400 });
   }
 }
